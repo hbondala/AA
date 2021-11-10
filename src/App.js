@@ -6,12 +6,14 @@ import Footer from './components/Footer';
 //import Artedu from './components/SankeyDiagramArtists';
 import ParallelSets from './components/ParallelSets';
 //import ObservableNoteBook from './components/ObservableNoteBook';
+import D3parse from './d3/parallel-sets/D3parse';
 
 function App() {
   return (
     <>
     <Router>
       <Navbar/>
+      <D3parse/>
       <ParallelSets/>
       <Footer/>
       <Switch>

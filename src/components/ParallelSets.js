@@ -7,6 +7,10 @@ import notebook from '../../src/d3/parallel-sets/1119cd90df42354c@485';
 function ParallelSets() {
     const chartRef = useRef();
 
+    // const library=new Library();
+
+    // const text =FileAttachment("./files/parallelsets").text();
+
   useEffect(() => {
     const runtime = new Runtime();
     runtime.module(notebook, name => {

@@ -1,7 +1,8 @@
 // https://observablehq.com/@ujwalamusku/parallel-sets@485
 export default function define(runtime, observer) {
+  console.log("Inside define");
   const main = runtime.module();
-  const fileAttachments = new Map([["artists_new_cat.csv","./files/parallelsets"]]);
+  const fileAttachments = new Map([["artists_new_cat.csv","parallelsets"]]);
   main.builtin("FileAttachment", runtime.fileAttachments(name => fileAttachments.get(name)));
   main.variable(observer()).define(["md"], function(md){return(
 md`# Parallel Sets
@@ -139,6 +140,7 @@ d3.scaleOrdinal(["Perished"], ["#da4f81"]).unknown("#ccc")
   main.variable(observer("data1")).define("data1", ["d3","FileAttachment"], async function(d3,FileAttachment){return(
 d3.csvParse(await FileAttachment("artists_new_cat.csv").text(),
            function (d){ 
+             console.log("data",d);
        //d.filter(function(row) {return row.category == 'Education'})}
     return {source: d.source, target: d.target, value: d.value, category : d.category}
 })
