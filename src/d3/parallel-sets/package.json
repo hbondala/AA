@@ -1,0 +1,14 @@
+{
+  "name": "@ujwalamusku/parallel-sets",
+  "main": "1119cd90df42354c@485.js",
+  "version": "485.0.0",
+  "homepage": "https://observablehq.com/@ujwalamusku/parallel-sets",
+  "author": {
+    "name": "Ujwala Musku",
+    "url": "https://observablehq.com/@ujwalamusku"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4"
+  }
+}

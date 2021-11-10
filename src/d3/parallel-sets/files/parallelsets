@@ -1,0 +1,59 @@
+﻿source,target,value,category
+Bachelor's Degree,Architects,37,Education
+Bachelor's Degree,Artists & Other related workers,165,Education
+Bachelor's Degree,Designers,15,Education
+Bachelor's Degree,Landscape architects,78,Education
+Bachelor's Degree,Producers and directors,183,Education
+Bachelor's Degree,Writers and Authors,166,Education
+High School,Actors,99,Education
+High School,Broadcast Announcers and radio disc jockeys,100,Education
+High School,Dancers and Choreographers,121,Education
+High School,Entertainers and performers,152,Education
+High School,Musicians,172,Education
+High School,Architects,188,Education
+High School,Artists & Other related workers,192,Education
+High School,Designers,166,Education
+Less than high school,Artists & Other related workers,59,Education
+Less than high school,Designers,99,Education
+Less than high school,Landscape architects,92,Education
+Master's degree,Architects,52,Education
+Master's degree,Artists & Other related workers,66,Education
+Master's degree,Designers,170,Education
+Master's degree,Landscape architects,164,Education
+Master's degree,Producers and directors,121,Education
+Master's degree,Writers and Authors,111,Education
+Master's degree,Actors,89,Education
+Master's degree,Broadcast Announcers and radio disc jockeys,78,Education
+Master's degree,Dancers and Choreographers,230,Education
+Some college,Designers,199,Education
+Some college,Landscape architects,12,Education
+Some college,Producers and directors,137,Education
+Architects,Bachelor's Degree,37,Occupation
+Artists & Other related workers,Bachelor's Degree,165,Occupation
+Designers,Bachelor's Degree,15,Occupation
+Landscape architects,Bachelor's Degree,78,Occupation
+Producers and directors,Bachelor's Degree,183,Occupation
+Writers and Authors,Bachelor's Degree,166,Occupation
+Actors,High School,99,Occupation
+Broadcast Announcers and radio disc jockeys,High School,100,Occupation
+Dancers and Choreographers,High School,121,Occupation
+Entertainers and performers,High School,152,Occupation
+Musicians,High School,172,Occupation
+Architects,High School,188,Occupation
+Artists & Other related workers,High School,192,Occupation
+Designers,High School,166,Occupation
+Artists & Other related workers,Less than high school,59,Occupation
+Designers,Less than high school,99,Occupation
+Landscape architects,Less than high school,92,Occupation
+Architects,Master's degree,52,Occupation
+Artists & Other related workers,Master's degree,66,Occupation
+Designers,Master's degree,170,Occupation
+Landscape architects,Master's degree,164,Occupation
+Producers and directors,Master's degree,121,Occupation
+Writers and Authors,Master's degree,111,Occupation
+Actors,Master's degree,89,Occupation
+Broadcast Announcers and radio disc jockeys,Master's degree,78,Occupation
+Dancers and Choreographers,Master's degree,230,Occupation
+Designers,Some college,199,Occupation
+Landscape architects,Some college,12,Occupation
+Producers and directors,Some college,137,Occupation
