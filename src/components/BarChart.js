@@ -1,8 +1,12 @@
 import { useD3 } from './useD3';
 import React from 'react';
 import * as d3 from 'd3';
+import { color } from 'd3';
+import './barchart.css'
+
 
 function BarChart({ data }) {
+  console.log(data)
   const ref = useD3(
     (svg) => {
       const height = 800;
@@ -11,13 +15,13 @@ function BarChart({ data }) {
 
       const x = d3
         .scaleBand()
-        .domain(data.map((d) => d.year))
+        .domain(data.map((d) => d.state))
         .rangeRound([margin.left, width - margin.right])
         .padding(0.1);
 
       const y1 = d3
         .scaleLinear()
-        .domain([0, d3.max(data, (d) => d.sales)])
+        .domain([0, d3.max(data, (d) => d.rate)])
         .rangeRound([height - margin.bottom, margin.top]);
 
       const xAxis = (g) =>
@@ -50,6 +54,13 @@ function BarChart({ data }) {
 
       svg.select(".x-axis").call(xAxis);
       svg.select(".y-axis").call(y1Axis);
+      
+      svg.append("text")
+      .attr("class","axislabel")
+      .attr("x",width/2)
+      .attr("y",height-5)
+      .style("text-anchor", "middle")
+      .text("State");
 
       svg
         .select(".plot-area")
@@ -58,11 +69,13 @@ function BarChart({ data }) {
         .data(data)
         .join("rect")
         .attr("class", "bar")
-        .attr("x", (d) => x(d.year))
+        .attr("x", (d) => x(d.state))
         .attr("width", x.bandwidth())
-        .attr("y", (d) => y1(d.sales))
-        .attr("height", (d) => y1(0) - y1(d.sales));
+        .attr("y", (d) => y1(d.rate))
+        .attr("height", (d) => y1(0) - y1(d.rate));
     },
+
+
     [data.length]
   );
 
@@ -70,7 +83,7 @@ function BarChart({ data }) {
     <svg
       ref={ref}
       style={{
-        height: 800,
+        height: 1000,
         width: "100%",
         marginRight: "0px",
         marginLeft: "0px",

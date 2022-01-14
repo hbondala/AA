@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@aws-sdk/client-cognito-identity": "^3.46.0",
+    "@aws-sdk/client-s3": "^3.46.0",
+    "@aws-sdk/credential-provider-cognito-identity": "^3.46.0",
     "@observablehq/runtime": "4",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -42,6 +45,5 @@
       "not op_mini all"
     ]
   },
-  "devDependencies": {
-  }
+  "devDependencies": {}
 }
