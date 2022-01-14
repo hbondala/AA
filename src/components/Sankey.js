@@ -2,8 +2,8 @@ import React, { useEffect, useRef, useState } from "react";
 import * as d3 from 'd3';
 import * as d3sa from 'd3-sankey';
 const size = {
-  width: 700,
-  height: 600,
+  width: 1200,
+  height: 800,
 };
 
 const getMousePosition = event => {

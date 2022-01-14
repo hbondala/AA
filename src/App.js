@@ -41,8 +41,24 @@ function App() {
     <>
     <Router>
       <Navbar/>
-      <Barchart data={data}/>
-      <Sankey data={sankeydata} edit={editSanMode} style="padding-left: 50px"/>
+      <div className='bar-chart' style={{width: 1500,padding:50}}>
+        <h1 align="center"> <b><u> Bar chart</u></b></h1>
+        <Barchart data={data}/>
+      </div>
+      
+      <div className='sankey-chart' style={{width:1500,padding:50}}>
+        <h1 align="center"> <b><u> Sankey chart</u></b></h1>
+        <Sankey data={sankeydata} edit={editSanMode} style="padding-left: 50px"/>
+      </div>
+
+      <div className='racing-barchart' style={{width: 1500,padding:50}} >
+        <h1 align="center"> <b><u> Racing Bar chart</u></b></h1>
+        <iframe width="70%" height="700" frameborder="0" src="https://ujwalamusku.github.io/racingbarchart/"></iframe>
+      </div>
+      <div className='Grouped-barchart' style={{width: 1500,padding:50}} >
+        <h1 align="center"> <b><u> Grouped Barchart</u></b></h1>
+        <iframe width="70%" height="700" frameborder="0" src="https://ujwalamusku.github.io/arts/"></iframe>
+      </div>
       <Footer/>
       <Switch>
         <Route path="/" exact/>
