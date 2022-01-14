@@ -19,9 +19,10 @@ function BarChart({ data }) {
         .rangeRound([margin.left, width - margin.right])
         .padding(0.1);
 
+      
       const y1 = d3
         .scaleLinear()
-        .domain([0, d3.max(data, (d) => d.rate)])
+        .domain([0, Math.ceil(d3.max(data, (d) => d.rate))])
         .rangeRound([height - margin.bottom, margin.top]);
 
       const xAxis = (g) =>
