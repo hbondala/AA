@@ -28,7 +28,7 @@ function App() {
       .then(res => res.json())
       .then(sankeydata => setsankeyData(sankeydata));
 
-    d3.csv(csvfiledata).then((d) => {
+    d3.csv("https://raw.githubusercontent.com/hbondala/AA/main/src/components/chart-data.csv").then((d) => {
       setData(d);
       setLoading(false);
     });
