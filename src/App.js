@@ -59,6 +59,10 @@ function App() {
         <h1 align="center"> <b><u> Grouped Barchart</u></b></h1>
         <iframe width="70%" height="700" frameborder="0" src="https://ujwalamusku.github.io/arts/"></iframe>
       </div>
+      <div className='Pie-chart' style={{width: 1500,padding:50}} >
+        <h1 align="center"> <b><u> Pie chart</u></b></h1>
+        <iframe width="70%" height="700" frameborder="0" src="https://himani2411.github.io/pie-chart.html"></iframe>
+      </div>
       <Footer/>
       <Switch>
         <Route path="/" exact/>
